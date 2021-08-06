@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="margin_large">32dp</dimen>
+    <dimen name="margin_super_fat">26dp</dimen>
+    <dimen name="margin_fat">24dp</dimen>
+    <dimen name="margin_bloated">20dp</dimen>
+    <dimen name="margin_button">18dp</dimen>
+    <dimen name="margin_default">16dp</dimen>
+    <dimen name="margin_small">14dp</dimen>
+    <dimen name="margin_stunted">12dp</dimen>
+    <dimen name="margin_super_small">10dp</dimen>
+    <dimen name="margin_tiny">8dp</dimen>
+    <dimen name="margin_mini">4dp</dimen>
+    <dimen name="margin_fab">6dp</dimen>
+
+    <dimen name="margin_huge">48dp</dimen>
+    <dimen name="margin_enormous">64dp</dimen>
+    <dimen name="margin_super_enormous">96dp</dimen>
+    <dimen name="margin_bottom_text">150dp</dimen>
+
+    <dimen name="margin_negative_section">-20dp</dimen>
+
+    <dimen name="angle_gradient">-90</dimen>
+    <dimen name="fab_radius">4.7</dimen>
+
+    <dimen name="fab_size">56dp</dimen>
+
+    <dimen name="fab_bg_size">120dp</dimen>
+
+    <dimen name="zero">0dp</dimen>
+    <dimen name="border_width">1dp</dimen>
+
+    <dimen name="border_button">2dp</dimen>
+    <dimen name="padding_bottom_small_button">6dp</dimen>
+
+    <dimen name="height_card_now">250dp</dimen>
+
+    <dimen name="width_vertical_card_now">112dp</dimen>
+    <dimen name="height_vertical_card_now">160dp</dimen>
+
+    <dimen name="width_horizontal_card_now">233dp</dimen>
+    <dimen name="height_horizontal_card_now">98dp</dimen>
+
+    <dimen name="text_tiny">11sp</dimen>
+    <dimen name="text_stunted">12sp</dimen>
+    <dimen name="text_small">14sp</dimen>
+    <dimen name="text_default">16sp</dimen>
+    <dimen name="text_section_title">18sp</dimen>
+    <dimen name="text_subtitle">20sp</dimen>
+    <dimen name="text_medium">22sp</dimen>
+    <dimen name="text_large">24sp</dimen>
+    <dimen name="text_extra_large">28sp</dimen>
+    <dimen name="text_slider">34sp</dimen>
+
+    <dimen name="corner_radius_bg">20dp</dimen>
+    <dimen name="corner_radius_button">30dp</dimen>
+    <dimen name="corner_radius_otp_field">5dp</dimen>
+    <dimen name="corner_radius_tiny">8dp</dimen>
+    <dimen name="corner_radius_card">14dp</dimen>
+
+    <dimen name="elevation_mini">2dp</dimen>
+    <dimen name="elevation_tiny">5dp</dimen>
+    <dimen name="elevation_large">8dp</dimen>
+
+    <dimen name="letter_spacing_button">0.05</dimen>
+    <dimen name="letter_spacing_text_button">0.03</dimen>
+    <dimen name="logo_now_login_width">89dp</dimen>
+    <dimen name="logo_now_login_height">24dp</dimen>
+    <dimen name="line_space_default">6sp</dimen>
+    <dimen name="padding_top_edit_text">22dp</dimen>
+    <dimen name="otp_field_width">43dp</dimen>
+
+    <dimen name="prominent_layout_manager_threshold">92dp</dimen>
+    <dimen name="recycler_horizontal_inner_space">26dp</dimen>
+    <dimen name="carousel_spacing">16dp</dimen>
+    <dimen name="wallet_cards_horizontal_recycler_height">220dp</dimen>
+    <dimen name="wallet_cards_horizontal_layout_height">200dp</dimen>
+    <dimen name="viewpager_next_item_visible">26dp</dimen>
+    <dimen name="viewpager_current_item_horizontal_margin">42dp</dimen>
+
+    <dimen name="card_logo_tiny_width">50dp</dimen>
+    <dimen name="card_logo_tiny_height">30dp</dimen>
+
+    <dimen name="wallet_card_rotate_image_width">32dp</dimen>
+    <dimen name="wallet_card_rotate_image_height">32dp</dimen>
+
+    <dimen name="now_logo_tiny_width">60dp</dimen>
+    <dimen name="now_logo_tiny_height">15dp</dimen>
+
+    <dimen name="wallet_card_height">190dp</dimen>
+    <dimen name="wallet_card_width">370dp</dimen>
+    <dimen name="wallet_card_elevation">8dp</dimen>
+
+    <dimen name="view_more_button_width">164dp</dimen>
+
+    <integer name="max_email_length">36</integer>
+    <integer name="max_password_length">12</integer>
+
+    <integer name="text_info_bold_start">44</integer>
+    <integer name="text_info_bold_end">50</integer>
+
+    <integer name="description_bold_start">40</integer>
+    <integer name="description_bold_end">76</integer>
+
+    <integer name="max_deposit_debit_account_bold_start">39</integer>
+    <integer name="max_deposit_debit_account_bold_end">73</integer>
+
+    <integer name="max_length_curp">18</integer>
+    <integer name="max_length_otp">6</integer>
+    <integer name="max_length_phone">10</integer>
+
+    <integer name="fading_duration">300</integer>
+    <integer name="max_length_name">36</integer>
+
+    <dimen name="total_weight_sum">1</dimen>
+    <dimen name="weight_twenty_percent">0.2</dimen>
+    <dimen name="weight_eighty_percent">0.8</dimen>
+
+    <dimen name="margin_bar_stepper">1.5</dimen>
+    <dimen name="stepper_bar_width">62dp</dimen>
+    <dimen name="stepper_bar_height">2dp</dimen>
+    <dimen name="stepper_circle_width">6.7dp</dimen>
+
+    <dimen name="progress_bar_min_height">6dp</dimen>
+    <dimen name="lottie_timer_width">24dp</dimen>
+    <dimen name="lottie_timer_height">24dp</dimen>
+    <dimen name="space_negative_margin_height">32dp</dimen>
+    <dimen name="arc_view_w">220dp</dimen>
+    <dimen name="arc_view_h">140dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>

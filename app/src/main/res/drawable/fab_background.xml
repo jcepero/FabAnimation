@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+
+            <gradient
+                android:angle="@dimen/angle_gradient"
+                android:endColor="@color/red_now"
+                android:startColor="@color/purple_now_2" />
+
+            <size
+                android:width="@dimen/fab_bg_size"
+                android:height="@dimen/fab_bg_size" />
+
+        </shape>
+    </item>
+    <item>
+
+        <shape
+            android:innerRadiusRatio="@dimen/fab_radius"
+            android:shape="ring"
+            android:thickness="@dimen/margin_fab"
+            android:useLevel="false">
+
+            <solid android:color="@color/white" />
+
+        </shape>
+    </item>
+</layer-list>

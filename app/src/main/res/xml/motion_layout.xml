@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <!--  BEGIN ARC VIEW ANIMATION -->
+
+    <ConstraintSet android:id="@+id/set_1">
+
+        <Constraint android:id="@+id/overlay">
+            <PropertySet android:alpha="0"/>
+        </Constraint>
+
+        <Constraint android:id="@+id/fab">
+            <Layout android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                motion:layout_constraintStart_toStartOf="parent"
+                motion:layout_constraintEnd_toEndOf="parent"
+                motion:layout_constraintBottom_toBottomOf="parent"/>
+        </Constraint>
+
+        <Constraint android:id="@+id/fab_1">
+            <Layout android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                motion:layout_constraintStart_toStartOf="@id/fab"
+                motion:layout_constraintEnd_toEndOf="@id/fab"
+                motion:layout_constraintBottom_toBottomOf="@id/fab"
+                motion:layout_constraintTop_toTopOf="@id/fab"/>
+            <Transform
+                android:rotation="-90" />
+        </Constraint>
+
+        <Constraint android:id="@+id/fab_2">
+            <Layout android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                motion:layout_constraintStart_toStartOf="@id/fab"
+                motion:layout_constraintEnd_toEndOf="@id/fab"
+                motion:layout_constraintBottom_toBottomOf="@id/fab"
+                motion:layout_constraintTop_toTopOf="@id/fab"/>
+            <Transform
+                android:rotation="90" />
+        </Constraint>
+
+        <Constraint android:id="@+id/arc_view">
+            <Layout android:layout_width="@dimen/arc_view_w"
+                android:layout_height="@dimen/arc_view_h"
+                motion:layout_constraintStart_toStartOf="parent"
+                motion:layout_constraintEnd_toEndOf="parent"
+                motion:layout_constraintBottom_toBottomOf="parent"/>
+            <Transform android:translationY="40dp" />
+            <PropertySet android:visibility="invisible" />
+        </Constraint>
+
+        <Constraint
+            android:id="@+id/tv_send"
+            motion:layout_constraintEnd_toEndOf="@id/fab_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:alpha="0"
+            motion:layout_constraintBottom_toTopOf="@+id/fab_1"
+            motion:layout_constraintStart_toStartOf="@+id/fab_1" />
+
+        <Constraint
+            android:id="@+id/tv_receive"
+            motion:layout_constraintEnd_toEndOf="@id/fab_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:alpha="0"
+            motion:layout_constraintBottom_toTopOf="@+id/fab_2"
+            motion:layout_constraintStart_toStartOf="@+id/fab_2" />
+
+    </ConstraintSet>
+
+    <ConstraintSet
+        android:id="@+id/set_2">
+
+        <Constraint android:id="@+id/overlay">
+            <PropertySet android:alpha="1"/>
+        </Constraint>
+
+        <Constraint android:id="@+id/fab">
+            <Layout android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                motion:layout_constraintStart_toStartOf="parent"
+                motion:layout_constraintEnd_toEndOf="parent"
+                motion:layout_constraintBottom_toBottomOf="parent"/>
+        </Constraint>
+
+        <Constraint android:id="@+id/arc_view">
+            <Layout android:layout_width="@dimen/arc_view_w"
+                android:layout_height="@dimen/arc_view_h"
+                motion:layout_constraintStart_toStartOf="parent"
+                motion:layout_constraintEnd_toEndOf="parent"
+                motion:layout_constraintBottom_toBottomOf="parent"/>
+            <Transform android:translationY="0dp" />
+            <PropertySet android:visibility="visible" />
+        </Constraint>
+
+        <Constraint android:id="@+id/fab_1">
+            <Layout android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                motion:layout_constraintStart_toStartOf="@id/arc_view"
+                motion:layout_constraintTop_toTopOf="@id/arc_view"/>
+            <Transform
+                android:rotation="0"/>
+        </Constraint>
+
+        <Constraint android:id="@+id/fab_2">
+            <Layout android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                motion:layout_constraintEnd_toEndOf="@id/arc_view"
+                motion:layout_constraintTop_toTopOf="@id/arc_view"/>
+            <Transform
+                android:rotation="0"/>
+        </Constraint>
+
+    </ConstraintSet>
+
+    <Transition
+        motion:constraintSetStart="@+id/set_1"
+        motion:constraintSetEnd="@+id/set_2"
+        motion:transitionEasing="decelerate">
+        <KeyFrameSet>
+            <KeyPosition
+                motion:framePosition="50"
+                motion:keyPositionType="deltaRelative"
+                motion:motionTarget="@id/fab_1"
+                motion:percentX="0.30"/>
+
+            <KeyPosition
+                motion:framePosition="50"
+                motion:keyPositionType="deltaRelative"
+                motion:motionTarget="@id/fab_2"
+                motion:percentX="0.30"/>
+
+            <KeyPosition
+                motion:framePosition="98"
+                motion:motionTarget="@id/tv_send"
+                motion:alpha="1"/>
+
+            <KeyPosition
+                motion:framePosition="98"
+                motion:motionTarget="@id/tv_receive"
+                motion:alpha="1"/>
+        </KeyFrameSet>
+    </Transition>
+
+</MotionScene>

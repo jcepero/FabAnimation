@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    app:layoutDescription="@xml/motion_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:parentTag="androidx.constraintlayout.motion.widget.MotionLayout">
+
+    <FrameLayout
+        android:id="@+id/overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_alpha_70"/>
+
+    <View
+        android:id="@+id/arc_view"
+        android:layout_width="@dimen/arc_view_w"
+        android:layout_height="@dimen/arc_view_h"
+        android:background="@drawable/shape_gradient"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/fab_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_1"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/fab"
+        app:layout_constraintEnd_toEndOf="@+id/fab"
+        app:layout_constraintStart_toStartOf="@+id/fab"
+        app:layout_constraintTop_toTopOf="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_attach_money_24"
+        app:tint="@color/white_now"
+        android:backgroundTint="@color/blue_now_4"/>
+
+    <TextView
+        android:id="@+id/tv_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="Enviar"
+        android:textColor="@color/blue_now"
+        app:layout_constraintBottom_toTopOf="@+id/fab_1"
+        app:layout_constraintStart_toStartOf="@+id/fab_1"
+        app:layout_constraintEnd_toEndOf="@id/fab_1"/>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blue_now_4"
+        android:src="@drawable/ic_baseline_attach_money_24"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/fab"
+        app:layout_constraintEnd_toEndOf="@+id/fab"
+        app:layout_constraintStart_toStartOf="@+id/fab"
+        app:layout_constraintTop_toTopOf="@+id/fab"
+        app:tint="@color/white_now" />
+
+    <TextView
+        android:id="@+id/tv_receive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="Recibir"
+        android:textColor="@color/blue_now"
+        app:layout_constraintBottom_toTopOf="@+id/fab_2"
+        app:layout_constraintStart_toStartOf="@+id/fab_2"
+        app:layout_constraintEnd_toEndOf="@id/fab_2"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:maxImageSize="56dp"
+        app:tint="@null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/fab_background" />
+
+</merge>
+

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".InputActivity"
+        android:padding="@dimen/margin_default">
+
+        <com.example.fabanimation.input.CustomInput
+            android:id="@+id/input_amount_to_transfer"
+            style="@style/TextInputLayoutFilledNowCurrency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_huge"
+            android:hint="Monto a transferir"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:mainHintTextSize="16sp">
+
+            <EditText
+                android:id="@+id/text_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:includeFontPadding="false"
+                android:inputType="number"
+                android:maxLength="@integer/max_length_phone"
+                android:textAlignment="center"
+                android:textColor="@color/blue_now"
+                android:textCursorDrawable="@drawable/cursor_blue_now"
+                android:textSize="34sp"/>
+        </com.example.fabanimation.input.CustomInput>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_ref_number"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_default"
+            android:hint="Referencia"
+            app:helperText="*Máximo 6 caracteres"
+            app:layout_constraintTop_toBottomOf="@+id/input_amount_to_transfer">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/text_ref_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="@integer/max_length_otp"
+                android:textColor="@color/blue_now"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+           style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_default"
+            android:text="@string/btn_continue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:onClick="showActivity"
+            app:layout_constraintTop_toBottomOf="@+id/input_ref_number"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
