@@ -59,11 +59,7 @@
             android:layout_marginBottom="5dp"
             android:alpha="0"
             motion:layout_constraintBottom_toTopOf="@+id/fab_1"
-            motion:layout_constraintStart_toStartOf="@+id/fab_1">
-            <CustomAttribute
-                motion:attributeName="textColor"
-                motion:customColorValue="#FF7777EF" />
-        </Constraint>
+            motion:layout_constraintStart_toStartOf="@+id/fab_1"/>
 
         <Constraint
             android:id="@+id/tv_receive"
@@ -73,11 +69,7 @@
             android:layout_marginBottom="5dp"
             android:alpha="0"
             motion:layout_constraintBottom_toTopOf="@+id/fab_2"
-            motion:layout_constraintStart_toStartOf="@+id/fab_2">
-            <CustomAttribute
-                motion:attributeName="textColor"
-                motion:customColorValue="#FF7777EF" />
-        </Constraint>
+            motion:layout_constraintStart_toStartOf="@+id/fab_2"/>
 
     </ConstraintSet>
 
