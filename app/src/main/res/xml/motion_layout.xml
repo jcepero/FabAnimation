@@ -20,8 +20,8 @@
         </Constraint>
 
         <Constraint android:id="@+id/fab_1">
-            <Layout android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <Layout android:layout_width="56dp"
+                android:layout_height="56dp"
                 motion:layout_constraintStart_toStartOf="@id/fab"
                 motion:layout_constraintEnd_toEndOf="@id/fab"
                 motion:layout_constraintBottom_toBottomOf="@id/fab"
@@ -31,8 +31,8 @@
         </Constraint>
 
         <Constraint android:id="@+id/fab_2">
-            <Layout android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <Layout android:layout_width="56dp"
+                android:layout_height="56dp"
                 motion:layout_constraintStart_toStartOf="@id/fab"
                 motion:layout_constraintEnd_toEndOf="@id/fab"
                 motion:layout_constraintBottom_toBottomOf="@id/fab"
@@ -59,7 +59,11 @@
             android:layout_marginBottom="5dp"
             android:alpha="0"
             motion:layout_constraintBottom_toTopOf="@+id/fab_1"
-            motion:layout_constraintStart_toStartOf="@+id/fab_1" />
+            motion:layout_constraintStart_toStartOf="@+id/fab_1">
+            <CustomAttribute
+                motion:attributeName="textColor"
+                motion:customColorValue="#FF7777EF" />
+        </Constraint>
 
         <Constraint
             android:id="@+id/tv_receive"
@@ -69,7 +73,11 @@
             android:layout_marginBottom="5dp"
             android:alpha="0"
             motion:layout_constraintBottom_toTopOf="@+id/fab_2"
-            motion:layout_constraintStart_toStartOf="@+id/fab_2" />
+            motion:layout_constraintStart_toStartOf="@+id/fab_2">
+            <CustomAttribute
+                motion:attributeName="textColor"
+                motion:customColorValue="#FF7777EF" />
+        </Constraint>
 
     </ConstraintSet>
 
@@ -100,8 +108,8 @@
         </Constraint>
 
         <Constraint android:id="@+id/fab_1">
-            <Layout android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <Layout android:layout_width="56dp"
+                android:layout_height="56dp"
                 android:layout_marginStart="16dp"
                 motion:layout_constraintStart_toStartOf="@id/arc_view"
                 motion:layout_constraintTop_toTopOf="@id/arc_view"/>
@@ -110,8 +118,8 @@
         </Constraint>
 
         <Constraint android:id="@+id/fab_2">
-            <Layout android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <Layout android:layout_width="56dp"
+                android:layout_height="56dp"
                 android:layout_marginEnd="16dp"
                 motion:layout_constraintEnd_toEndOf="@id/arc_view"
                 motion:layout_constraintTop_toTopOf="@id/arc_view"/>
